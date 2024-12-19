@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">IDBI Bank</string>
+    <string name="cvv">CVV</string>
+</resources>

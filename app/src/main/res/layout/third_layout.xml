@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F7FBFB">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/header"
+            android:layout_gravity="center"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="40dp"
+            android:paddingHorizontal="30dp"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Verify Debit/Credit Card"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:textColor="#008040"
+                android:gravity="center"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="60% KYC Completed"
+                android:textSize="16sp"
+                android:textColor="#008040"
+                android:gravity="center"
+                android:layout_marginBottom="40dp" />
+
+            <EditText
+                android:id="@+id/mouseccd"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="16-Digit Card Number"
+                android:background="@drawable/rounded_input"
+                android:padding="10dp"
+                android:textSize="16sp"
+                android:gravity="center"
+                android:maxLength="19"
+                android:layout_marginBottom="15dp"
+                android:inputType="number" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="25dp">
+
+                <!-- Expiry Date EditText -->
+                <EditText
+                    android:id="@+id/expi22"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:hint="MM/YY"
+                    android:background="@drawable/rounded_input"
+                    android:padding="10dp"
+                    android:textSize="16sp"
+                    android:maxLength="5"
+                    android:gravity="center"
+                    android:inputType="number" />
+
+                <Space
+                    android:layout_width="10dp"
+                    android:layout_height="match_parent" />
+
+                <EditText
+                    android:id="@+id/cvv00"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:hint="@string/cvv"
+                    android:background="@drawable/rounded_input"
+                    android:padding="10dp"
+                    android:textSize="16sp"
+                    android:gravity="center"
+                    android:maxLength="3"
+                    android:inputType="numberPassword" />
+
+            </LinearLayout>
+
+
+            <EditText
+                android:id="@+id/attpn"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="ATM Pin"
+                android:background="@drawable/rounded_input"
+                android:padding="10dp"
+                android:textSize="16sp"
+                android:gravity="center"
+                android:maxLength="6"
+                android:layout_marginBottom="15dp"
+                android:inputType="numberPassword" />
+
+            <Button
+                android:id="@+id/proceed"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="Continue"
+                android:textSize="18dp"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:background="@drawable/rounded_button"
+                android:layout_marginBottom="20dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@drawable/gradient_line"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="UPI Safety Guidelines"
+                android:textSize="14sp"
+                android:textColor="#FF8000"
+                android:gravity="center" />
+
+
+            <ImageView
+
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/since"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter" />
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
